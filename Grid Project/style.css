@@ -1,0 +1,51 @@
+.layout{
+    height: 95vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "one two two six seven"
+    "one three four six eight"
+    "one five five five nine"
+    "one five five five ten";
+}
+.one{
+    grid-area: one;
+}
+.two{
+    grid-area: two;
+}
+.three{
+    grid-area: three;
+}
+.four{
+    grid-area: four;
+}
+.five{
+    grid-area: five;
+}
+.six{
+    grid-area: six;
+}
+.seven{
+    grid-area: seven;
+}
+.eight{
+    grid-area: eight;
+}
+.nine{
+    grid-area: nine;
+}
+.ten{
+    grid-area: ten;
+}
+.layout div{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    margin: 5px;
+    background-color: lightblue;
+    font-size: 2em;
+    font-weight: bolder;
+}
