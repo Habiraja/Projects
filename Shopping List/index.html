@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shopping List</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🛒 Shopping List</h1>
+
+    <!-- ─── Input Row ─────────────────────────────────────────── -->
+    <div class="inputs">
+      <input id="item-name"  type="text"     placeholder="Item name" />
+      <input id="item-qty"   type="number"   placeholder="Qty"       min="1" />
+      <input id="item-price" type="number"   placeholder="Price ₹"   min="0" step="0.01" />
+      <button id="add-btn">Add ➕</button>
+    </div>
+
+    <!-- ─── List ──────────────────────────────────────────────── -->
+    <ul id="list"></ul>
+
+    <!-- ─── Total ─────────────────────────────────────────────── -->
+    <div class="total">
+      Total: ₹ <span id="total-value">0.00</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
